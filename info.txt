@@ -1,0 +1,205 @@
+This INFO.TXT describes how to set up all directories with program files
+needed to create an AMPOS2 WarpIn installation package.
+
+If you have any questions, feel free to contact us at info@ampos2.de
+
+If you detect bugs or something else, feel free to create a ticket at
+http://svn.netlabs.org/ampos2/newticket
+Be shure the problem can be reproduced with the latest version that
+is in the repository.
+
+2005-11-28 Michael Oehlhof
+2006-10-14 Michael Oehlhof: Update for Apache 2.2 and PHP5
+2006-11-17 Michael Oehlhof: Update MySQL 5.0.27, phpMyAdmin 2.9.1 and bugfixing
+2007-02-11 Michael Oehlhof: Update Apache 2.2.4, MySQL 5.0.33, 
+                            PHP 5.2.1 and phpMyAdmin 2.9.2
+2007-05-08 Michael Oehlhof: Update MySQL 5.0.37 and phpMyAdmin 2.10.1
+2007-05-11 Michael Oehlhof: Update MySQL 5.0.41
+
+
+First you must create a directory where all the stuff can be copied to.
+We will call this directory AMPOS2WPI.
+
+In this directory there must be some subdirectories created.
+
+For creating Apache 1.3 package:
+================================
+
+Directory: ampos
+
+This directory holds the readme file for the AMPOS2 installation
+and configuration scripts for Apache 1.3 and PHP4.
+These files are in the SVN repository.
+
+Directory: apache1
+Extract the contents of the apache1.3 ZIP file in this directory.
+After that copy the files from the apache1 directory of the SVN repository
+to this location.
+
+Directory: mysql1
+Extract the files from the mysql WPI file with this command line
+wic mysql-4-1-7-b2.wpi -x 1
+and copy the files to the mysql1 directory.
+After that, copy libc06b4.dll from the DLL subdirectory to the BIN subdirectory.
+Copy libc05.dll and libc06b2.dll from their ZIP file to the BIN subdirectory.
+Extract the mysql 4.0 package elswhere and copy mysql40.dll to the
+BIN subdirectory. Also copy mysql.exe as mysql40.exe to the BIN subdirectory.
+
+Directory: mysql2
+Extract the files from the mysql WPI file with this command line
+wic mysql-4-1-7-b2.wpi -x 2
+and copy the files to the mysql2 directory.
+
+Directory: mysql6
+Extract the files from the mysql WPI file with this command line
+wic mysql-4-1-7-b2.wpi -x 6
+and copy the files to the mysql6 directory.
+
+Directory: php4
+Extract the contents of the php4.3.10-os2 ZIP file in this directory.
+After that copy the files from the php4 directory of the SVN repository
+to this location.
+Copy modphp4.dll from the php4/apache13 directory to apache1/libexec.
+Copy php4.dll from the php4 directory to apache1/libexec.
+Copy php.exe from the php4/cgi directory to apache1/cgi-bin.
+
+Directory: phpadmin1
+Extract the contents of the phpmyadmin-2.6.4 ZIP file in this directory.
+
+Directory: typo3ecs
+Copy the files from the typo3ecs directory of the SVN repository
+to this location.
+
+
+
+For creating Apache 2.0 package:
+================================
+
+Directory: ampos2
+This directory holds the readme file for the AMPOS2 installation
+and configuration scripts for Apache 2.0 and PHP4.
+These files are in the SVN repository.
+
+Directory: apache2
+Extract the contents of the apache2.0 ZIP file in this directory.
+After that copy the files from the apache2 directory of the SVN repository
+to this location.
+
+Directory: mysql1
+Extract the files from the mysql WPI file with this command line
+wic mysql-4-1-7-b2.wpi -x 1
+and copy the files to the mysql1 directory.
+After that, copy libc06b4.dll from the DLL subdirectory to the BIN subdirectory.
+Copy libc05.dll and libc06b2.dll from their ZIP file to the BIN subdirectory.
+Extract the mysql 4.0 package elswhere and copy mysql40.dll to the
+BIN subdirectory. Also copy mysql.exe as mysql40.exe to the BIN subdirectory.
+
+Directory: mysql2
+Extract the files from the mysql WPI file with this command line
+wic mysql-4-1-7-b2.wpi -x 2
+and copy the files to the mysql2 directory.
+
+Directory: mysql6
+Extract the files from the mysql WPI file with this command line
+wic mysql-4-1-7-b2.wpi -x 6
+and copy the files to the mysql6 directory.
+
+Directory: php4
+Extract the contents of the php4.3.10-os2 ZIP file in this directory.
+After that copy the files from the php4 directory of the SVN repository
+to this location.
+Copy modphp4.dll from the php4/apache20 directory to apache2/modules.
+Copy php4.dll from the php4 directory to apache2/modules.
+Copy php.exe from the php4/cgi directory to apache2/cgi-bin.
+
+Directory: phpadmin2
+Extract the contents of the phpmyadmin-2.5.7 ZIP file in this directory.
+
+Directory: typo3ecs
+Copy the files from the typo3ecs directory of the SVN repository
+to this location.
+
+
+
+For creating Apache 2.2 package:
+================================
+
+Directory: ampos22
+This directory holds the readme file for the AMPOS2 installation
+and configuration scripts for Apache 2.2 and PHP5.
+These files are in the SVN repository.
+
+Directory: apache22
+Extract the contents of the httpd-2.2.4-os2 ZIP file in this directory.
+After that copy the files from the apache22 directory of the SVN repository
+to this location.
+
+Directory: php5
+Extract the contents of the php5.2.1-os2 ZIP file in this directory.
+After that copy the files from the php5 directory of the SVN repository
+to this location.
+Copy php5.dll from the php5 directory to apache22/modules.
+Copy php.exe from the php5/cgi directory to apache22/cgi-bin.
+Copy modphp5.dll from the php5/apache2 directory to apache22/modules.
+Extract the pdf.dll of the pdflib-php5.2.0-os2 ZIP file to php5\modules.
+Extract the yaz.dll of the php_yaz ZIP file to php5\modules and the other
+files to php5\yaz_doc.
+
+Directory: lib
+This directory holds library files needed to be in libpath
+Extract the contents of the libc-0.6.2-csd2 ZIP file in a temporary directory.
+Copy gcc335.dll from the temporary directory to lib.
+Copy libc06.dll from the temporary directory to lib.
+Copy libc061.dll from the temporary directory to lib.
+Copy libc062.dll from the temporary directory to lib.
+
+Directory: phpadmin22
+Extract the contents of the phpMyAdmin-2.10.1-all-languages ZIP file in this 
+directory.
+
+Directory: mysql5
+Extract the contents of the mysql-5.0.41-os2 ZIP file in this directory.
+
+Directory: mysql5data
+Extract the contents of the data directory from the mysql-noinstall-5.0.24-win32
+ZIP file or from the mysql5data ZIP file in this directory.
+
+Directory: typo3ecs
+Copy the files from the typo3ecs directory of the SVN repository
+to this location.
+
+
+
+
+Copy all files from the root directory of the SVN repository to the
+AMPOS2WPI directory.
+
+Here is a short description of these files:
+
+ampos2-a13.cmd
+Batch file to create the AMPOS2-A13.WPI installion file with Apache 1.3.
+
+ampos2-a13.wis
+The WarpIn installation script for use with Apache 1.3.
+
+ampos2-a20.cmd
+Batch file to create the AMPOS2-A20.WPI installion file with Apache 2.0.
+
+ampos2-a20.wis
+The WarpIn installation script for use with Apache 2.0.
+
+ampos2-a22.cmd
+Batch file to create the AMPOS2-A22.WPI installion file with Apache 2.2.
+
+ampos2-a22.wis
+The WarpIn installation script for use with Apache 2.2.
+
+ampos2.cmd
+Batch file to create all installation packages.
+
+
+You need also copy wic.exe and wpirtl.dll of your WarpIn installation to
+this directory.
+
+
+

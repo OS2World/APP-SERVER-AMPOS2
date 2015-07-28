@@ -1,0 +1,32 @@
+#   зддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддд©
+#   Ё╠╠╠╠╠╠╠╠╠╠╠╠╠╠╠╠╠╠╠╠ Typo3 goes eComStation ╠╠╠╠╠╠╠╠╠╠╠╠╠╠╠╠╠╠╠╠╠Ё
+#   юддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддды
+#   This list of files are to be changed in typo3-starter-packages to
+#   get Typo3 fly on OS/2 or eComStation, please change this list only
+#   with enough experience to Typo3, eCAMP
+
+#   зддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддд©
+#   Ё╠╠╠╠╠╠╠╠╠╠ list of files to be changed for operation ╠╠╠╠╠╠╠╠╠╠╠╠Ё
+#   юддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддды
+
+index.php
+showpic.php
+t3lib\thumbs.php
+tslib\index_ts.php
+tslib\showpic.php
+typo3\init.php
+typo3\thumbs.php
+typo3\sysext\cms\tslib\index_ts.php
+typo3\sysext\cms\tslib\showpic.php
+typo3\t3lib\thumbs.php
+
+#   зддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддд©
+#   Ё╠╠╠╠╠╠╠╠╠╠ file to be changed for 1-2-3-install-mode ╠╠╠╠╠╠╠╠╠╠╠╠Ё
+#   юддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддды
+
+typo3\install\index.php
+
+#   зддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддд©
+#   Ё╠╠╠╠╠╠╠╠╠╠╠╠╠╠ 2005-11-11 by Roland Schmalenberg ╠╠╠╠╠╠╠╠╠╠╠╠╠╠╠╠Ё
+#   юддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддды
+

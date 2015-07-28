@@ -1,0 +1,27 @@
+#   зддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддд©
+#   Ё╠╠╠╠╠╠╠╠╠╠╠╠╠╠╠╠╠╠╠╠ TYPO3 goes eComStation ╠╠╠╠╠╠╠╠╠╠╠╠╠╠╠╠╠╠╠╠╠Ё
+#   юддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддды
+#   This list of files are to be changed in typo3-version-4-packages to
+#   get TYPO3 fly on OS/2 or eComStation, please change this list only
+#   with enough experience to TYPO3
+
+#   зддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддд©
+#   Ё╠╠╠╠╠╠╠╠╠╠ list of files to be changed for operation ╠╠╠╠╠╠╠╠╠╠╠╠Ё
+#   юддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддды
+
+t3lib\thumbs.php
+typo3\init.php
+typo3\sysext\cms\tslib\index_ts.php
+typo3\sysext\cms\tslib\showpic.php
+typo3\sysext\rtehtmlarea\htmlarea\plugins\Spellchecker\spell-check-logic.php
+
+#   зддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддд©
+#   Ё╠╠╠╠╠╠╠╠╠╠ file to be changed for 1-2-3-install-mode ╠╠╠╠╠╠╠╠╠╠╠╠Ё
+#   юддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддды
+
+typo3\install\index.php
+
+#   зддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддд©
+#   Ё╠╠╠╠╠╠╠╠╠╠╠╠╠╠ 2006-11-12 by Roland Schmalenberg ╠╠╠╠╠╠╠╠╠╠╠╠╠╠╠╠Ё
+#   юддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддды
+
